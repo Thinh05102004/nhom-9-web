@@ -1,0 +1,601 @@
+/* header */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
+.header {
+    box-shadow: 0px 0px 10px 0px #00000026;
+    padding: 10px 10px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+.header .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .inner-logo img {
+    width: 170px;
+    height: 55px;
+    padding-left: 230px;
+}
+
+.header .inner-logo a {
+    display: flex;
+    align-items: center;
+}
+.header .inner-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* position: relative;
+    left: -155px; */
+}
+
+.header .inner-menu ul li a {
+    display: inline-block;
+    padding: 30px 20px;
+    color: #1E1E1E;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+}
+a.reser {
+    margin-right: 145px;
+}
+ .header .inner-menu ul li a:hover{
+    color: #FB5849;
+}
+/* end header */
+/* section-one */
+.section-one{
+    width: 1503.2px;
+    height: 97.6px;
+    margin-bottom: 500px;
+}
+.section-one .inner-wrap{
+    display: flex;
+}
+.section-one .inner-content img{
+    width: 460px;
+    height: 500px;
+}
+.section-one .inner-content{
+    position: relative;
+}
+.section-one .inner-content .inner-desc{
+    position: absolute;
+    top: 171px;
+    left: 106px;
+}
+.section-one .inner-img img{
+    height: 500px;
+    width: 1043.2px;
+}
+.section-one .inner-desc .inner-title{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: Dancing Script;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.section-one .inner-desc .inner-sub-title{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.section-one .inner-desc .button{
+    width: 183px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 3px 0px 0px 0px;
+    border: 2px solid #FFFFFF;
+    font-family: Poppins;
+    font-size: 13px;
+    color: #FB5849;
+}
+/* end section-one */
+/* section-two */
+.section-two{
+    width: 1503.2px;
+    height: 97.6px;
+    background: #FFFFFF;
+    margin-bottom: 500px;
+}
+.section-two .inner-wrap{
+    padding-left: 164px;
+    padding-right: 164px;
+    display: flex;
+}
+.section-two .inner-sub-img img{
+    width: 510px;
+    height: 478.83px;
+}
+.section-two .inner-title span{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FB5849;
+}
+.section-two .inner-sub-title{
+    font-family: Source Sans Pro;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2A2A2A;
+}
+.section-two .inner-desc{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2A2A2A;
+    margin-bottom: 30px;
+}
+.section-two .inner-img{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -62px;
+}
+.section-two .inner-img img{
+    width: 160px;
+    height: 160px;
+}
+.section-two .inner-sub-img{
+    position: relative;
+}
+.section-two .inner-icon{
+    width: 70px;
+    height: 70px;
+    background: #FB5849;
+    border-radius: 35px;
+    position: absolute;
+    top: 205px;
+    left: 226px;
+}
+.section-two .inner-icon img{
+    width: 12.56px;
+    height: 13.86px;
+    margin-left: 30px;
+    margin-top: 29px;
+}
+/* end section-two */
+/* section-three */
+.section-three{
+    width: 1503.2px;
+    height: 97.6px;
+    background: #FFFFFF;
+    margin-bottom: 500px;
+}
+.section-three .inner-content{
+    padding-left: 164px;
+    padding-right: 164px;
+}
+.section-three .inner-title span{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FB5849;
+}
+.section-three .inner-sub-title{
+    font-family: Source Sans Pro;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2A2A2A;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.section-three .inner-img{
+    display: flex;
+    justify-content: space-between;
+}
+.section-three .inner-item img{
+   width: 284px;
+   height: 400px;
+   border-radius: 4px;
+}
+.section-three .inner-item .inner-desc{
+    width: 70px;
+    height: 70px;
+    background: #FB5849;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+.section-three .inner-item{
+    position: relative;
+}
+.section-three .inner-desc{
+    position: absolute;
+    top: 0px;
+}
+.section-three .inner-item .inner-sub-content{
+    width: 284px;
+    height: 67px;
+    background: #FB5849;
+    position: absolute;
+    top: 353px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.section-four{
+    width: 1503.2px;
+    height: 97.6px;
+    background: #FFFFFF;
+    margin-bottom: 500px;
+}
+.section-four .inner-wrap .inner-content{
+    text-align: center;
+}
+.section-four .inner-content .inner-title{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FB5849;
+}
+.section-four .inner-content .inner-sub-title{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2A2A2A;
+}
+.section-four .inner-item img{
+    width: 338px;
+    height: 320.16px;
+}
+.section-four .inner-item{
+    width: 350px;
+    height: 420.16px;
+    border-radius: 3px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #AFAFAF;
+    padding-left: 12px;
+}
+.section-four .inner-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-four .inner-item .inner-sub-item{
+    text-align: center;
+}
+.section-four .inner-sub-item .inner-desc{
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2A2A2A;
+}
+.section-four .inner-sub-item .inner-sub-desc{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2A2A2A;
+}
+/* end section-four */
+/* section-five */
+.section-five .inner-wrap img{
+    width: 1503.2px;
+    height: 787px;
+}
+.section-five .inner-title img{
+    width: 30px;
+    height: 2px;
+    background: #FFFFFF;
+}
+.section-five .inner-sub-content{
+    position: relative;
+}
+.section-five .inner-sub-content .inner-title{
+    position: absolute;
+    top: -714px;
+    left: 151px;
+    color: #FFFFFF;
+}
+.section-five .inner-sub-content .inner-title span{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+}
+.section-five .inner-sub-content .inner-sub-title{
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    position: absolute;
+    top: -682px;
+    left: 147px;
+}
+.section-five .inner-right-content{
+    width: 510px;
+    height: 546.5px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -2400px;
+    left: 839px;
+    border-radius: 5px;
+    text-align: center;
+}
+.section-five .inner-right-content .inner-title{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2A2A2A;
+    margin-bottom: 26px;
+}
+.section-five .inner-right-content .inner-list {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.section-five .inner-list input {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 46px;
+    padding: 0px 16px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Be Vietnam;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2A2A2A;
+    border: 1px solid #DDDDDD;
+}
+.section-five .inner-right-content .inner-list .inner-input textarea{
+    width: 487px;
+    height: 150px;
+    margin-left: 8px;
+}
+.section-five .inner-right-content .button{
+    width: 489px;
+    height: 43.5px;
+    background: #FB5849;
+    border-radius: 3px;
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: 2px solid;
+}
+.section-five .inner-list{
+    display: flex;
+}
+.section-five .inner-content .inner-list .inner-item{
+    width: 255px;
+    height: 160px;
+    border-radius: 5px 0px 0px 0px;
+    background: #FFFFFF;
+    margin-left: 142px;
+    margin-right: -89px;
+    margin-top: 69px;
+    text-align: center;
+    padding-top: 16px;
+}
+.section-five .inner-content .inner-list .inner-item{
+    position: relative;
+    top: -548px;
+}
+.section-five .inner-content .inner-list .inner-item .inner-icon{
+    position: absolute;
+    top: 51px;
+    left: 57px;
+}
+.section-five .inner-content .inner-list .inner-item .inner-icon .inner-number{
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+}
+.section-five .inner-content .inner-list .inner-item .inner-icon .inner-desc{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2A2A2A;
+}
+.section-five .inner-content .inner-list .inner-item .inner-img img{
+    width: 18.86px;
+    height: 18.86px;
+    background: #FFFFFF;
+    border: 2px none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.section-five .inner-content .inner-list .inner-item .inner-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #FB5849;
+    position: relative;
+    top: -51px;
+    left: 93px;
+}
+/* end section-five */
+/* section-six */
+.section-six{
+    width: 1503.2px;
+    height: 97.6px;
+    background: #FFFFFF;
+    margin-bottom: 810px;
+}
+.section-six .inner-content{
+    text-align: center;
+}
+.section-six .inner-content .inner-title{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #FB5849;
+}
+.section-six .inner-content .inner-sub-title{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #2A2A2A;
+    margin-bottom: 50px;
+}
+.section-six .inner-icon{
+    display: flex;
+    margin-left: 626px;
+    margin-bottom: 110px;
+}
+.section-six .inner-icon .inner-item{
+    width: 86px;
+    height: 89.5px;
+    text-align: center;
+}
+.section-six .inner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section-six .inner-list .inner-sub-item{
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 54px;
+    margin-left: 15px;
+    margin-right: 45px;
+    width: 525px;
+    height: 100px;
+}
+.section-six .inner-list .inner-sub-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.section-six .inner-list .inner-sub-item:nth-child(2n+1) {
+    clear: left;
+}
+.section-six .inner-list .inner-sub-item .inner-box {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 455px;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FB5849;
+}
+.section-six .inner-list .inner-sub-item .inner-sub-content {
+    font-family: Poppins;
+    font-size: 20px;
+    width: 220px;
+    height: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #2A2A2A;
+    margin-top: 9.5px;
+    margin-left: 120px;
+    position: absolute;
+}
+.section-six .inner-list .inner-sub-item .inner-tab-item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+}
+.section-six .inner-list .inner-sub-item .inner-tab-item img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+/* end section-six */
+/* section-seven */
+.section-seven{
+    width: 1503.2px;
+    height: 97.6px;
+    padding: 10px 10px;
+    background: #FB5849;
+}
+.section-seven .inner-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-seven .inner-wrap .inner-social{
+    display: flex;
+    width: 350px;
+    height: 44px;
+    justify-content: space-evenly;
+}
+.section-seven .inner-wrap .inner-social .inner-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background: #FFFFFF;
+    margin-top: 26px;
+    position: relative;
+}
+.section-seven .inner-wrap .inner-social .inner-item a{
+    position: absolute;
+    top: 11px;
+    left: 13px;
+}
+.section-seven .inner-wrap .inner-logo{
+    width: 170px;
+    height: 55px;
+    margin-top: 19px;
+}
+.section-seven .inner-wrap .inner-content{
+    width: 196.61px;
+    height: 50px;
+}
+.section-seven .inner-wrap .inner-content .inner-title{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.section-seven .inner-wrap .inner-content .inner-title span{
+    color: #007BFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

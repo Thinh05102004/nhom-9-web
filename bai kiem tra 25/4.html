@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemTraDuLieu(form){
+            var name = from.Name.value;
+            var phone = from.Phone.value;
+            var email = from.Email.value;
+            var project = from.Project.value;
+
+            var hoTenPattern = /^[a-zA-Z\s]+$/;
+            if (!hoTenPattern.test(name)) {
+                alert("Họ và tên không hợp lệ. Vui lòng nhập lại.");
+                return false;
+            }
+
+            var phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("phone  không hợp lệ. Vui lòng nhập lại.");
+                return false;
+            }
+
+
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Email không hợp lệ. Vui lòng nhập lại.");
+                return false;
+            }
+            var projectnPattern = /^[a-zA-Z\s]+$/;
+            if (!projectnPattern.test(project)) {
+                alert("project không hợp lệ. Vui lòng nhập lại.");
+                return false;
+            }
+            var thongTin = "Name: " + name + "\n";
+            thongTin += "phone : " + phone + "\n";
+            thongTin += "email: " + email + "\n";
+            thongTin += "project : " + project ;
+            alert(thongTin);
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <style>
+        .header{
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+        .container{
+            background-color: white;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            border: 2px solid black;
+        }
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 50px;
+            position: relative;
+            bottom: 40px;
+        }
+        .thinh{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            left: 10px;
+            bottom: 70px;
+        }
+        .name{
+            width: 150px;
+            height: 30px;
+        }
+        .phone{
+            width: 150px;
+            height: 30px;
+        }
+        .email{
+            width: 380px;
+            height: 30px;
+            position: relative;
+            bottom: 50px;
+        }
+        .project{
+            width: 380px;
+            height: 80px;
+            position: relative;
+            bottom: 30px;
+        }
+        .thinh2{
+            position: relative;
+            right: 120px;
+            bottom: 20px;
+        }
+        .submit{
+            width: 380px;
+            height: 40px;
+            position: relative;
+            bottom: 15px;
+            right: 5px;
+            background-color: brown;
+        }
+    </style>
+    <div class="header">
+        <div class="container">
+            <h3>STAY IN CAONTACT</h3>
+            <p>Get in Touch</p>
+            <form onsubmit="return kiemTraDuLieu(this);">
+                <div class="thinh">
+                    <input type="text" placeholder="Name" class="name"id=Name><br>
+                    <input type="number" placeholder="Phone No." class="phone" id="Phone"><br>
+                </div>
+                <input type="email"  placeholder="Email l'd" class="email"id=Email><br>
+                <input type="text" placeholder="Project Brief" class="project" id="Project"><br>
+                <div class="thinh2">
+                    <input type="checkbox">
+                    <label for="">Subscribe Newsletter</label><br>
+                </div>
+                <input type="submit" value="Send Message" class="submit" id="Submit" >
+            </form>
+        </div>
+    </div>
+</body>
+</html>

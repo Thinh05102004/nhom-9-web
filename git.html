@@ -1,0 +1,35 @@
+<!-- 
+    Working directory(thư mục làm việc) : khu vực chứa dự án mà chúng ta đang làm việc
+    Stading area(khu vực sắp xếp) : khu vực chứa thông tin thay đổi của các file
+    Repository(Git directory - thư mục git) : kho lưu trữ để lưu trữ dữ liệu , lịch sử các phiên bản
+    các câu lện git phổ biến :
+        git init
+            khởi tạo 1 git repository(kho lưu trữ) trong dự án mới hoặc dự án đã có(dùng trong thư mục gốc của dự án)
+            khi khởi tạo xong trong thư mục gốc (dự án đang làm) sẽ sinh ra một thư mục tên là .git,thư mục này sẽ lưu toàn bộ thông tin lịch sử của dự án mà bạn làm ,chúng ta không cần quan tâm bên trong thư mục này chứa gì
+        git status
+            để xem trạng thái của những file đã được thay đổi (bao gồm : thêm , sửa ,xoá) trong dự án
+            vd : tạo file README.md trong dự án (file này giới thiệu và hướng dẫn cách cài đặt dự án) . sau đó gõ lệnh git status , ta sẽ thấy có file README.md được thêm mới
+        git add ten_file
+            thông tin các file sẽ được lưu vào Staging area
+            Staging area có tác dụng sắp xếp lại những file đã add vào
+            vd : tạo các file rồi thử lại câu lện này
+        git add.g
+            thêm thay đổi cho tất cả các file
+            vd : tạo ra các file rồi thử lại câu lệnh này
+        git commit-m "Nội dung...."
+            để đưa những file ở vùng Staging area chuyển sang Repository , mục đích là tạo ra 1 phiên bản mới vào lưu vào lịch sử của Repository
+            với điều kiện các tập tin , thư mục được thay đổi đã phải nằm trong Staging Area
+        git log
+            giúp bạn xem lại thông tin lịch sử commit nhằm giám sát sự thay đổi của dự án . commit mới sẽ hiện bên trên  , commit cũ sẽ hiện bên dưới (nếu gặp chữ END thì nhấn phím q để thoát)
+        git show commit_id
+            dùng để xem chi tiết một commit
+        git diff
+            xem sự thay đổi của một file sau khi chúng ta chỉnh sửa(file đó vẫn đang ở khu vực Working directory)
+        gitk
+            mở dashboard xem trực quan hơn
+        git checkout--ten_file 
+            bỏ đi những thay đổi của file , để file đó trở về như lúc ban đầu . áp dụng cho file đang ở vùng Worrking directory
+        git reset HEAD ten_file hoặc git reset ten_file
+            chuyển file đó từ vùng Staging area trở lại vùng Working directory
+               
+-->

@@ -1,0 +1,714 @@
+
+.header{
+    width: 1500px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.header-main .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.inner-logo a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 300px;
+}
+.inner-logo img{
+    height: 48px;
+    width: 56px;
+    margin-right: 10px;
+}
+.inner-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none ;
+    display: flex;
+    position: relative;
+    right: 300px;
+}
+.inner-menu ul li a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+.inner-menu ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reser{
+    position: relative;
+    left: 100px;
+}
+.inner-menu ul li a:hover{
+    color: brown;
+}
+.inner-content{
+    position: relative;
+    top: -516px;
+    right: -137px;
+}
+
+h4{
+    color: rgba(255, 255, 255, 1);
+     font-size: 54px;
+}
+.inner-content h6{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    position: relative;
+    bottom: 60px;
+}
+button{
+    color:  rgba(251, 88, 73, 1);
+    width: 185px;
+    height: 45px;
+    position: relative;
+    bottom: 60px;
+}
+.selection-one{
+    display: flex;
+    width: 1500px;
+    height: auto;
+}
+.selection-one .left-content {
+    width: 500px;
+    height: auto;
+}
+.selection-one .left-content img{
+    width: 500px;
+    height: 700px;
+}
+.selection-one .slick-list{
+    width: 1000px;
+    height: 700px;
+}
+.selection-one .slick-list img{
+    width: 1000px;
+    height: 700px;
+}
+.selection-two{
+    width: 1500px;
+    height: auto;
+}
+.inner-wrapp{
+    width: 1140px;
+    height: 503px;
+    display: flex;
+    margin-left: 180px;
+}
+.section-img{
+    display: flex;
+    justify-content: space-around;
+}
+.section-heading h6{
+    color: brown;
+    position: relative;
+    top: -35px;
+}
+h2{
+    font-size: 30px;
+    color: rgba(42, 42, 42, 1);
+
+}
+p{
+    font-size: 16px;
+    color: rgba(42, 42, 42, 1);
+
+}
+.radius{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: rgba(251, 88, 73, 1);
+    position: relative;
+    bottom: 267px;
+    left: 241px;
+}
+i{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    color: white;
+}
+.section-three{
+    width: 1500px;
+    height: auto;
+    margin-top: 232px;
+}
+.content-three{
+    position: relative;
+    top: -35px;
+    left: 167px;
+}
+.img-three{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    position: relative;
+    bottom: 30px;
+}
+h5{
+    width: 70px;
+    height: 70px;
+    border-radius: 3px;
+    background: rgba(251, 88, 73, 1);
+    font-size: 20px;
+    position: relative;
+    top: -436px;
+    color:  rgba(255, 255, 255, 1);
+}
+span{
+    position: relative;
+    top: 26px;
+    left: 14px;
+}
+h1{
+    width: 284px;
+    border: 1px solid rgba(251, 88, 73, 1);
+    background: rgba(251, 88, 73, 1);
+    height: 55px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 195px;
+}
+.contentt{
+    position: relative;
+    top: 20px;
+    right: 53px;
+    color: white;
+}
+.content-three h6{
+    color: brown;
+}
+
+
+
+/* .section-four{
+    text-align: center;
+    width: 1500px;
+    height: auto;
+}
+.inner-wrappp{
+    margin-left :150px ;
+    width: 1140px;
+    height: 608.16px;
+   
+}
+.inner-contenttt h6{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FB5849;
+
+}
+.inner-contenttt h2{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900px;
+    line-height: 40px;
+    text-align: center;
+    color:  #2A2A2A;
+
+}
+.img-3{
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.img-3 .img-3{
+    width: 100%;
+    border: 1px solid #AFAFAF;
+    height: 400px;
+}
+.name1,.name2,.name3   {
+font-weight: bolder;
+position: relative;
+top: 10px;
+color: #2A2A2A;
+font-size: 20px;
+}
+
+.smaller1,.smaller2,.smaller3 {
+position: relative;
+top: 20px;
+}
+.img-3.item{
+    height: 500px;
+    margin: 0px 15px;
+    border: 1px solid #AFAFAF;
+    padding: 0px 3px;
+} */
+.wrapper123{
+    text-align: center;
+    width: 1500px;
+    height: auto;
+}
+.header123{
+    margin-left :150px ;
+    width: 1140px;
+    height: 608.16px;
+   
+}
+.content123 h6{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FB5849;
+
+}
+.content123 h2{
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900px;
+    line-height: 40px;
+    text-align: center;
+    color:  #2A2A2A;
+
+}
+.img123{
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.img123 .img123{
+    width: 100%;
+    border: 1px solid #AFAFAF;
+    height: 400px;
+}
+.img123 .item-img{
+height: 500px;
+margin: 0px 15px;
+border: 1px solid #AFAFAF;
+padding: 0px 3px;
+}
+.name1,.name2,.name3   {
+font-weight: bolder;
+position: relative;
+top: 10px;
+color: #2A2A2A;
+font-size: 20px;
+}
+
+.smaller1,.smaller2,.smaller3 {
+position: relative;
+top: 20px;
+}
+.section-five{
+    background-image: url(ce2c8df31170b8e602aa9852949a8a8d.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 1460px;
+    height: 728px;
+    margin-top: 100px;
+}
+.contact{
+    width: 540px;
+    height: 120px;
+    top: 199.75px;
+    left: 405px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.contact h6{
+    width: 540px;
+    height: 18px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #FFFFFF;
+
+}
+.contact h3{
+    font-family: Open Sans;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    position: relative;
+    left: 206px;
+    top: -30px;
+    color: #FFFFFF;
+}
+.two-content{
+    display: flex;
+    text-align: center;
+    margin-top: 400px;
+}
+.two-content .content-one{
+    width: 255px;
+    height: 160px;
+    background-color: #FFFFFF;
+    margin-left: 200px;
+    
+    border: 1px solid #FFFFFF;
+    margin-top: -160px;
+}
+.two-content .content-two{
+    width: 255px;
+    height: 160px;
+    background-color:#FFFFFF;
+    margin-left: 15px;
+    
+    border: 1px solid #FFFFFF;
+    margin-top: -160px;
+}
+.two-content .content-one img{
+    width: 70px;
+    height: 70px;
+    color: #FB5849;
+    margin-top: -30px;
+}
+.two-content .content-two img{
+    width: 70px;
+    height: 70px;
+    color: #FB5849;
+    position: relative;
+    top: -30px;
+}
+.two-content .content-one h5{
+    width: 256px;
+    height: 0px;
+    font-family: Be Vietnam Pro;
+    margin-top: 10px;
+    font-size: large;
+}
+.two-content .content-one h6{
+    width: 256px;
+    height: 0px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.two-content .content-two h5{
+    width: 256px;
+    height: 0px;
+    font-family: Be Vietnam Pro;
+    margin-top: -20px;
+    font-size: large;
+}
+.two-content .content-two h6{
+    width: 256px;
+    height: 0px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.datban{
+width: 510px;
+height: 546.5px;
+top: 800px;
+left: 805px;
+
+border-radius: 5px;
+background: #FFFFFF;
+position: absolute;
+
+
+}
+.datban-title{
+font-family: Be Vietnam Pro;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+
+}
+input{
+text-align: center;
+width: 180px;
+height: 25px;
+margin: 10px 5px;
+margin-left: 18px;
+padding: 12.5px 21px 10.5px 21px;
+border-radius: 5px;
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+font-family: Be Vietnam;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.38px;
+
+
+}
+.input-cmt{
+width: 430px;
+height: 120px;
+top: 294px;
+left: 30px;
+border: 1px solid #DDDDDD;
+border-radius: 5px 0px 0px 0px;
+
+}
+.button{
+width: 450px;
+height: 43.5px;
+margin-left: 30px;
+text-align: center;
+line-height: 43.5px;
+border-radius: 3px;
+background: #FB5849;
+font-family: Be Vietnam Pro;
+font-size: 20px;
+font-weight: 600;
+color: #FFFFFF;
+
+
+}
+
+
+
+
+
+
+
+
+.section-six{
+    width: 1500px;
+    height: auto;
+    margin-top: 232px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* 
+---------------------------------------------
+Phần CSS 'Thực đơn đặc biệt tuần này'
+--------------------------------------------- 
+*/
+
+.Section {
+    width: 1140px;
+    height: 799.5px;
+    margin-top: 4135.66px;
+    margin-left: 390px;
+    margin-right: 390px;
+}
+
+.Klassy_Week {
+    width: 120.91px;
+    height: 18px;
+    margin-top: 0px;
+    margin-left: 509.73px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FB5849;
+}
+
+.Heading_2 {
+    width: 308.02px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 416.09px;
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+    color: #2A2A2A;
+    position: absolute;
+}
+
+.Tablist {
+    width: 540px;
+    height: 89.5px;
+    margin-top: 170px;
+    margin-left: 406.19px;
+    position: absolute;
+    display: flex;
+}
+
+.Tab {
+    width: 86px;
+    height: 89.5px;
+    padding-right: 34.81px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bua {
+    width: 89px;
+    height: 23px;
+    margin-top: 66.84px;
+    margin-left: -1.19px;
+    font-family: Be Vietnam Pro;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: center;
+    color: #FB5849;
+    position: absolute;
+}
+
+.tab-icon {
+    width: 86px;
+    height: 52px;
+    position: absolute;
+}
+
+.Section→Tabpanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1140px;
+    height: 462px;
+    margin-top: 319.5px;
+}
+
+.list {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 54px;
+    margin-left: 15px;
+    margin-right: 45px;
+    width: 525px;
+    height: 100px;
+}
+
+.list:nth-child(2n) {
+    margin-right: 0;
+}
+
+.list:nth-child(2n+1) {
+    clear: left;
+}
+
+.Heading_6 {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 455px;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FB5849;
+}
+
+.Heading_4 {
+    font-family: Poppins;
+    font-size: 20px;
+    width: 220px;
+    height: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #2A2A2A;
+    margin-top: 9.5px;
+    margin-left: 120px;
+    position: absolute;
+}
+
+.tab-item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+}
+
+.tab-item img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* 
+---------------------------------------------
+Phần CSS 'Chân của trang web'
+--------------------------------------------- 
+*/
+
+.Footer {
+    width: 1920px;
+    height: 155px;
+    margin-top: 60px;
+    background-color: #FB5849;
+}
+
+.Footer-list {
+    width: 350px;
+    height: 44px;
+    margin-top: 60px;
+    margin-left: 405px;
+    position: absolute;
+    display: flex;
+}
+
+.Item→Link {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 19.81px;
+}
+
+.Icon {
+    width: 18px;
+    height: 20px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.Link→white-logo {
+    width: 170px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: 875px;
+    position: absolute;
+}
+
+.©Copyright-Klassy-Cafe-Co-Design-ThinhTungGiang {
+    width: 196.61px;
+    height: 50px;
+    margin-top: 55px;
+    margin-left: 1318.59px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+

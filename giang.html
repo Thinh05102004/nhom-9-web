@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clone_1.css">
+    <title>testTwo</title>        
+</head>
+
+<body>
+
+    <!-- *** Phần 'Thực đơn đặc biệt' *** -->
+
+    <div class="Section">
+        <div class="Klassy_Week">
+            Klassy Week
+        </div>
+        <div class="Heading_2">
+            Thực đơn đặc biệt của tuần này
+        </div>
+        <div class="Tablist">
+            <div class="Tab" id="breakfast-btn">
+                <div class="tab-icon">
+                    <img src="assets/images/tab-icon-01.png" alt="Bữa sáng">
+                </div>
+                <div class="bua">
+                    Bữa sáng
+                </div>
+            </div>
+            <div class="Tab" id="lunch-btn">
+                <div class="tab-icon">
+                    <img src="assets/images/tab-icon-02.png" alt="Bữa trưa">
+                </div>
+                <div class="bua">
+                    Bữa trưa
+                </div>
+            </div>
+            <div class="Tab" id="dinner-btn">
+                <div class="tab-icon">
+                    <img src="assets/images/tab-icon-03.png" alt="Bữa tối">
+                </div>
+                <div class="bua">
+                    Bữa tối
+                </div>
+            </div>
+        </div>
+        <div class="Section→Tabpanel" id="food-list">
+            <!-- Nội dung của danh sách thực đơn sẽ được cập nhật bởi JavaScript -->
+        </div>
+    </div>
+
+    <!-- *** Phần chân của trang web *** -->
+
+    <div class="Footer">
+        <div class="Footer-list">
+            <div class="Item→Link" id="facebookShare">
+                <img src="assets/images/Item → Link fb.png" alt="Facebook">
+            </div>
+            <div class="Item→Link" id="linkedinShare">
+                <img src="assets/images/Item → Link in.png" alt="LinkedIn">
+            </div>
+            <div class="Item→Link" id="twitterShare">
+                <img src="assets/images/Item → Link twitter.png" alt="Twitter">
+            </div>
+            <div class="Item→Link" id="instagramShare">
+                <img src="assets/images/Item → Link insta.png" alt="Instagram">
+            </div>
+        </div>
+        <div class="Link→white-logo" id="logoLink">
+            <img src="assets/images/white-logo.png" alt="Klassy Cafe Logo">
+        </div>
+        <div class="©Copyright-Klassy-Cafe-Co-Design-ThinhTungGiang">
+            © Copyright Klassy Cafe Co.
+            Design: ThinhTungGiang 
+        </div>
+    </div>
+
+    <script>
+
+        const buttons = document.querySelectorAll('.bua');
+
+        // Xử lý sự kiện khi nhấp vào các nút
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Đặt màu đen cho nút được nhấp
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+
+
+        // Lấy URL hiện tại của trang
+        const pageUrl = window.location.href;
+
+        // Xử lý sự kiện khi nhấp vào biểu tượng Facebook
+        document.getElementById("facebookShare").addEventListener("click", function() {
+            const url = "https://www.facebook.com/sharer.php?u=" + encodeURIComponent(pageUrl);
+            window.open(url, "_blank");
+        });
+
+        // Xử lý sự kiện khi nhấp vào biểu tượng Twitter
+        document.getElementById("twitterShare").addEventListener("click", function() {
+            const url = "https://twitter.com/intent/tweet?url=" + encodeURIComponent(pageUrl);
+            window.open(url, "_blank");
+        });
+
+        // Xử lý sự kiện khi nhấp vào biểu tượng LinkedIn
+        document.getElementById("linkedinShare").addEventListener("click", function() {
+            const url = "https://www.linkedin.com/shareArticle?url=" + encodeURIComponent(pageUrl);
+            window.open(url, "_blank");
+        });
+
+        // Xử lý sự kiện khi nhấp vào biểu tượng Instagram
+        document.getElementById("instagramShare").addEventListener("click", function() {
+            const url = "https://www.instagram.com/";
+            window.open(url, "_blank");
+        });
+
+        // Lấy biểu tượng logo
+        const logoLink = document.getElementById("logoLink");
+
+        // Xử lý sự kiện khi nhấp vào biểu tượng logo
+        logoLink.addEventListener("click", function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+            window.scrollTo({ top: 0, behavior: "smooth" }); // Lăn lên đầu trang một cách mượt mà
+        });
+
+        const breakfastItems = [
+            { name:'Fresh Chicken Salad', price: '20k', imgSrc: 'assets/images/tab-item-01.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Dollma Pire', price: '10k', imgSrc: 'assets/images/tab-item-05.png' },
+            { name: 'Orange Juice', price: '10k', imgSrc: 'assets/images/tab-item-02.png' },
+            { name: 'Eggs Omelette', price: '10k', imgSrc: 'assets/images/tab-item-04.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+        ];
+
+        const lunchItems = [
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+            { name: 'Omelette & Cheese', price: '15k', imgSrc: 'assets/images/tab-item-06.png' },
+        ];
+
+        const dinnerItems = [
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+            { name: 'Fruit Salad', price: '15k', imgSrc: 'assets/images/tab-item-03.png' },
+        ];
+
+        // Hiển thị danh sách ban đầu (Breakfast)
+        updateList(breakfastItems);
+
+        // Xử lý sự kiện khi nhấp vào các nút
+        document.getElementById("breakfast-btn").addEventListener("click", () => updateList(breakfastItems));
+        document.getElementById("lunch-btn").addEventListener("click", () => updateList(lunchItems));
+        document.getElementById("dinner-btn").addEventListener("click", () => updateList(dinnerItems));
+
+        // Hàm cập nhật danh sách
+        function updateList(items) {
+            const foodList = document.getElementById("food-list");
+            foodList.innerHTML = ""; // Xóa danh sách hiện tại
+
+            items.forEach(item => {
+                const li = document.createElement("div");
+                li.className = "list";
+                li.innerHTML = `
+                    <div class="Heading_6">${item.price}</div>
+                    <div class="Heading_4">${item.name}</div>
+                    <div class="tab-item">
+                        <img src="${item.imgSrc}" class="food-image" alt="${item.name}">
+                    </div>
+                `;
+                foodList.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+</html>
+Facebook
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* 
+---------------------------------------------
+Phần CSS 'Thực đơn đặc biệt tuần này'
+--------------------------------------------- 
+*/
+
+.Section {
+    width: 1140px;
+    height: 799.5px;
+    margin-top: 4135.66px;
+    margin-left: 390px;
+    margin-right: 390px;
+}
+
+.Klassy_Week {
+    width: 120.91px;
+    height: 18px;
+    margin-top: 0px;
+    margin-left: 509.73px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FB5849;
+}
+
+.Heading_2 {
+    width: 308.02px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 416.09px;
+    font-family: Be Vietnam Pro;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+    color: #2A2A2A;
+    position: absolute;
+}
+
+.Tablist {
+    width: 540px;
+    height: 89.5px;
+    margin-top: 170px;
+    margin-left: 406.19px;
+    position: absolute;
+    display: flex;
+}
+
+.Tab {
+    width: 86px;
+    height: 89.5px;
+    padding-right: 34.81px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bua {
+    width: 89px;
+    height: 89.5px;
+    margin-left: -1.19px;
+    font-family: Be Vietnam Pro;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    padding-top: 67px;
+    text-align: center;
+    color: #FB5849;
+    position: absolute;
+}
+
+.bua.active{
+    color: #000000;
+}
+
+.tab-icon {
+    width: 86px;
+    height: 52px;
+    position: absolute;
+}
+
+.Section→Tabpanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1140px;
+    height: 462px;
+    margin-top: 319.5px;
+}
+
+.list {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 54px;
+    margin-left: 15px;
+    margin-right: 45px;
+    width: 525px;
+    height: 100px;
+}
+
+.list:nth-child(2n) {
+    margin-right: 0;
+}
+
+.list:nth-child(2n+1) {
+    clear: left;
+}
+
+.Heading_6 {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 455px;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FB5849;
+}
+
+.Heading_4 {
+    font-family: Poppins;
+    font-size: 20px;
+    width: 220px;
+    height: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #2A2A2A;
+    margin-top: 9.5px;
+    margin-left: 120px;
+    position: absolute;
+}
+
+.tab-item {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    border-radius: 5px 5px 5px 5px;
+    position: absolute;
+}
+
+.tab-item img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* 
+---------------------------------------------
+Phần CSS 'Chân của trang web'
+--------------------------------------------- 
+*/
+
+.Footer {
+    width: 1920px;
+    height: 155px;
+    margin-top: 60px;
+    background-color: #FB5849;
+}
+
+.Footer-list {
+    width: 350px;
+    height: 44px;
+    margin-top: 60px;
+    margin-left: 405px;
+    position: absolute;
+    display: flex;
+}
+
+.Item→Link {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 19.81px;
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+}
+
+.Item→Link:hover {
+    filter: grayscale(100%);
+}
+
+.Link→white-logo {
+    width: 170px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: 875px;
+    position: absolute;
+}
+
+.©Copyright-Klassy-Cafe-Co-Design-ThinhTungGiang {
+    width: 196.61px;
+    height: 50px;
+    margin-top: 55px;
+    margin-left: 1318.59px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    position: absolute;
+}

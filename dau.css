@@ -1,0 +1,15 @@
+.section-one{
+    background-color: #F2FBF8;
+    padding: 60px 0;
+}
+.inner-box i{
+    color: green;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.inner-content{
+    font-size: 20px;
+}
+.lorem{
+    font-size: 16px;
+}
